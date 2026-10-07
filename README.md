@@ -89,12 +89,12 @@ O K6 possui um **web dashboard** nativo, que permite acompanhar as métricas em 
 
 **Windows (PowerShell):**
 ```powershell
-$env:K6_WEB_DASHBOARD="true"; $env:K6_WEB_DASHBOARD_EXPORT="html-report.html"; k6 run -e BASE_URL=http://localhost:3000 tests/nome-do-teste.test.js
+$env:K6_WEB_DASHBOARD="true"; $env:K6_WEB_DASHBOARD_EXPORT="html-report.html"; k6 run -e BASEURL=http://localhost:3000 tests/nome-do-teste.test.js
 ```
 
 **Windows (CMD):**
 ```cmd
-set K6_WEB_DASHBOARD=true && set K6_WEB_DASHBOARD_EXPORT=html-report.html && k6 run -e BASE_URL=http://localhost:3000 tests/nome-do-teste.test.js
+set K6_WEB_DASHBOARD=true && set K6_WEB_DASHBOARD_EXPORT=html-report.html && k6 run -e BASEURL=http://localhost:3000 tests/nome-do-teste.test.js
 ```
 
 Com o teste em execução, abra [http://localhost:5665](http://localhost:5665) no navegador para acompanhar o relatório em tempo real. Ao final, o arquivo `html-report.html` será gerado na raiz do projeto e poderá ser aberto em qualquer navegador.
